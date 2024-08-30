@@ -16,12 +16,26 @@ Update the `3-music-collection.js` file to do the following:
 ### Required Features
 
 - Create an empty array named `myCollection`.
+let myCollection =[];
 
 - Create a function named `addToCollection`. It should have this basic structure:
   - ```js
       function addToCollection(collection, title, artist, yearPublished) {
-        // your code here...
+        let object = {title : title, artist: artist, yearPublished:yearPublished};
+        collection.push(object);
+      };
+      
+    [
+      {Title: Tomorrow People,
+      artist: Bob Marley,
+      year: 1967
       }
+
+      {Title: Your mama
+      artist: me
+      year: 1995
+      }
+    ]
     ```
   - This function should:
     - Take in a `collection` parameter. (This allows the function to be reused to add an album to any array of album objects.)
